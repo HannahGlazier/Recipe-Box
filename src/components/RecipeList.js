@@ -1,6 +1,7 @@
 import React from 'react'
 import RecipeCard from './RecipeCard'
 
+
 function RecipeList({ recipes, onRecipeClick }) {
   // console.log(recipes)
   const mappedRecipes = recipes.map(recipe => (
@@ -13,9 +14,10 @@ function RecipeList({ recipes, onRecipeClick }) {
   
   return (
     <>
-    <div className="ui four stackable cards">{mappedRecipes}</div>
+    <div className="ui four stackable cards recipeTile">{mappedRecipes}</div>
     </>
   )
 }
 
 export default RecipeList
+

@@ -12,7 +12,7 @@ function RecipesToTry( {recipesToTry, onRecipeClick} ) {
 
   return (
     <>
-    <div className="ui four stackable cards">{mappedRecipesToTry}</div>
+    <div className="ui four stackable cards recipeTile">{mappedRecipesToTry}</div>
     </>
   )
 }

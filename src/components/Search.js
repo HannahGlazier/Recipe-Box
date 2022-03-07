@@ -8,7 +8,7 @@ function Search({searchTerm, setSearchTerm}) {
 
   return (   
     <div>
-      <label htmlFor="search">Search Recipe    </label>
+      <label htmlFor="search">Search Recipes    </label>
       <input
         type="text"
         id="search"
