@@ -2,11 +2,14 @@ import React from 'react'
 import Search from './Search'
 import Filter from './Filter'
 
-function Header() {
+function Header({searchTerm, setSearchTerm}) {
   return (
     <>
         <div>Header</div>
-        <Search />
+        <Search 
+          searchTerm={searchTerm} 
+          setSearchTerm={setSearchTerm}
+        />
         <Filter />
     </>
   )

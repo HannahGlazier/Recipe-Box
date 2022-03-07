@@ -6,6 +6,7 @@ import RecipeContainer from './components/RecipeContainer'
 function App() {
   const [recipes, setRecipes] = useState([])
   const [recipesToTry, setRecipesToTry] = useState([])
+  const [searchTerm, setSearchTerm] = useState("")
 
   useEffect(() => {
     fetch('http://localhost:3000/recipes')
@@ -19,9 +20,9 @@ function App() {
     }
   }
 
-  // const searchedRecipe = recepie.filter((recepie) =>
-    
-  //)
+  const searchedRecipe = recipes.filter((recipe) =>
+    recipe.name.toLowerCase().includes(searchTerm.toLowerCase())
+  )
 
   function handleRemoveFromTryList(recipe){
     const newTryList = recipesToTry.filter(individualRecipe => individualRecipe !== recipe)
@@ -30,9 +31,12 @@ function App() {
   
   return (
     <div>
-      <Header />
+      <Header 
+        searchTerm={searchTerm} 
+        setSearchTerm={setSearchTerm}
+      />
       <RecipeContainer
-        recipes={recipes}
+        recipes={searchedRecipe}
         recipesToTry={recipesToTry}
         onAddClick={handleAddToTryList}
         onRemoveClick={handleRemoveFromTryList}
