@@ -1,12 +1,13 @@
 import React from 'react'
 import RecipeCard from './RecipeCard'
 
-function RecipeList({ recipes }) {
+function RecipeList({ recipes, onRecipeClick }) {
   // console.log(recipes)
   const mappedRecipes = recipes.map(recipe => (
     <RecipeCard
       key={recipe.id}
       recipe={recipe}
+      onRecipeClick={onRecipeClick}
     />
   ))
   
@@ -19,18 +20,3 @@ function RecipeList({ recipes }) {
 }
 
 export default RecipeList
-
-
-// {recipes.map((recepie) => (
-//   <RecipeCard
-//     key={recepie.name}
-//     recepie={recepie}
-//   />
-// ))}
-//   {/* {recipes.map(recipe => (
-//   <RecipeCard
-//     key={recipe.id}
-//     recipe={recipe}} */}
-// {/* /> */}
-
-// {/* {mappedRecipes} */}

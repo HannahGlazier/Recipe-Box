@@ -1,8 +1,15 @@
 import React from 'react'
 
 function Search() {
-  return (
-    <div>Search</div>
+  return (   
+    <div>
+      <label htmlFor="search">Search Recipe    </label>
+      <input
+        type="text"
+        id="search"
+        placeholder="type to search..."
+      />
+    </div>
   )
 }
 

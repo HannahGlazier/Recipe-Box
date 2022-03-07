@@ -1,6 +1,6 @@
 import React from 'react'
 
-function RecipeCard({ recipe }) {
+function RecipeCard({ recipe, onRecipeClick }) {
   const mappedIngredientName = recipe.ingredients.map(ingredient => (
     <ul key={ingredient.name + ingredient.quantity}>
       <li>Name: {ingredient.name}</li>
@@ -16,7 +16,10 @@ function RecipeCard({ recipe }) {
   ))
   
   return (
-    <div className="ui card recipeTile">
+    <div 
+    className="ui card recipeTile"
+    onClick={() => onRecipeClick(recipe)}
+    >
     <h4>{recipe.name}</h4>
     <img src={recipe.imageURL} alt={recipe.name}/>
     <h5>{mappedIngredientName}</h5>

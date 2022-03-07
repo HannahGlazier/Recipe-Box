@@ -19,15 +19,23 @@ function App() {
     }
   }
 
-  // const searchedRece
+  // const searchedRecipe = recepie.filter((recepie) =>
+    
+  //)
 
+  function handleRemoveFromTryList(recipe){
+    const newTryList = recipesToTry.filter(individualRecipe => individualRecipe !== recipe)
+    setRecipesToTry(newTryList)
+  }
+  
   return (
     <div>
       <Header />
       <RecipeContainer
-      recipes={recipes}
-      recipesToTry={recipesToTry}
-      onAddClick={handleAddToTryList}
+        recipes={recipes}
+        recipesToTry={recipesToTry}
+        onAddClick={handleAddToTryList}
+        onRemoveClick={handleRemoveFromTryList}
       />
     </div>
   );
