@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react'
+import { Route, Switch } from "react-router-dom";
 import Header from './components/Header'
 import RecipeContainer from './components/RecipeContainer'
-
+import About from './components/About';
+import AddRecipe from './components/AddRecipe';
 
 function App() {
   const [recipes, setRecipes] = useState([])
@@ -30,17 +32,28 @@ function App() {
   }
   
   return (
+    
     <div>
-      <Header 
-        searchTerm={searchTerm} 
-        setSearchTerm={setSearchTerm}
-      />
-      <RecipeContainer
-        recipes={searchedRecipe}
-        recipesToTry={recipesToTry}
-        onAddClick={handleAddToTryList}
-        onRemoveClick={handleRemoveFromTryList}
-      />
+        <Header 
+          searchTerm={searchTerm} 
+          setSearchTerm={setSearchTerm}
+        />
+        <Switch>
+          <Route exact path="/">
+            <RecipeContainer
+              recipes={searchedRecipe}
+              recipesToTry={recipesToTry}
+              onAddClick={handleAddToTryList}
+              onRemoveClick={handleRemoveFromTryList}
+            />
+          </Route>
+          <Route path="/about">
+            <About />  
+          </Route>
+          <Route path="/addRecipe">
+            <AddRecipe />  
+          </Route>
+        </Switch>
     </div>
   );
 }

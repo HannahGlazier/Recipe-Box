@@ -5,22 +5,6 @@ function RecipeCard({ recipe, onRecipeClick }) {
   const [showDetail, setShowDetail] = useState(false)
 
 
-  // const mappedIngredientName = recipe.ingredients.map(ingredient => (
-  //   <RecipeDetail>
-  //   <ul key={ingredient.name + ingredient.quantity}>
-  //     <li>Name: {ingredient.name}</li>
-  //     <li>Quantity: {ingredient.quantity}</li>
-  //     <li>Type: {ingredient.type}</li>
-  //   </ul>
-  //   </RecipeDetail>
-  // ))
-
-  // const recipeSteps = recipe.steps.map(step => (
-  //   <ul key={step}>
-  //     <li>{step} </li>
-  //   </ul>
-  // ))
-  
   return (
     <div 
     className="ui card"
