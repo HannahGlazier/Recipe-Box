@@ -3,7 +3,6 @@ import React from 'react'
 function Search({searchTerm, setSearchTerm}) {
 
   function handleSearch(e) {
-    // e.preventDefault()
     setSearchTerm(e.target.value)
   }
 
@@ -15,7 +14,7 @@ function Search({searchTerm, setSearchTerm}) {
         id="search"
         placeholder="type to search..."
         value={searchTerm}
-        onChange={handleSearch}
+        onChange={e => handleSearch(e)}
       />
     </div>
   )
