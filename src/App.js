@@ -5,6 +5,7 @@ import RecipeContainer from './components/RecipeContainer'
 
 function App() {
   const [recipes, setRecipes] = useState([])
+  const [recipesToTry, setRecipesToTry] = useState([])
 
   useEffect(() => {
     fetch('http://localhost:3000/recipes')
@@ -12,10 +13,22 @@ function App() {
     .then(recipes => setRecipes(recipes))
   }, [])
 
+  function handleAddToTryList(recipe) {
+    if(!recipesToTry.includes(recipe)){
+      setRecipesToTry([...recipesToTry, recipe])
+    }
+  }
+
+  // const searchedRece
+
   return (
     <div>
       <Header />
-      <RecipeContainer recipes={recipes}/>
+      <RecipeContainer
+      recipes={recipes}
+      recipesToTry={recipesToTry}
+      onAddClick={handleAddToTryList}
+      />
     </div>
   );
 }
