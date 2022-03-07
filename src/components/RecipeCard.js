@@ -17,13 +17,13 @@ function RecipeCard({ recipe, onRecipeClick }) {
   
   return (
     <div 
-    className="ui card recipeTile"
+    className="ui card"
     onClick={() => onRecipeClick(recipe)}
     >
     <h4>{recipe.name}</h4>
     <img src={recipe.imageURL} alt={recipe.name}/>
-    <h5>{mappedIngredientName}</h5>
-    {recipeSteps}
+    {/* <h5>{mappedIngredientName}</h5>
+    {recipeSteps} */}
  
     </div>
   )
