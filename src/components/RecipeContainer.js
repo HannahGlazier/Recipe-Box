@@ -2,12 +2,12 @@ import React from 'react'
 import RecipeList from './RecipeList'
 import RecipesToTry from './RecipesToTry'
 
-function RecipeContainer() {
+function RecipeContainer({ recipes }){
+
   return (
     <>
       <div>Recipe Container</div>
-      <RecipeList />
-      <RecipesToTry />
+      <RecipeList recipes={recipes}/>
     </>
   )
 }
