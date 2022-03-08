@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { FiHome, FiInfo, FiPlusSquare } from 'react-icons/fi'
+import { FiHome, FiInfo, FiPlusSquare, FiInbox } from 'react-icons/fi'
 
 const linkStyles = {
   display: "inline-block",
@@ -14,14 +14,16 @@ const linkStyles = {
 
 function NavBar() {
   return (
-    <div>
+    <div> 
+      <FiInbox/> Recipe Box
+      <div className='navStyling'>
       <NavLink
         to="/"
         exact
         className='ui button'
       
         activeStyle={{
-          background: "grey",
+          background: "#949494",
         }}
       >
         <FiHome /> Home
@@ -31,7 +33,7 @@ function NavBar() {
         exact
         className='ui button'
         activeStyle={{
-          background: "grey",
+          background: "#949494",
         }}
       >
       <FiInfo /> About
@@ -41,11 +43,12 @@ function NavBar() {
         exact
         className='ui button'
         activeStyle={{
-          background: "grey",
+          background: "#949494",
         }}
       >
         <FiPlusSquare />Add Recipe
       </NavLink>
+    </div>
     </div>
   );
 }

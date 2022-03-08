@@ -15,3 +15,11 @@ code {
 .recipeTile {
   text-align: center;
 }
+
+.navStyling{
+  float: right;
+}
+
+.logo{
+  font-size: 40px;
+}
