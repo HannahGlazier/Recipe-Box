@@ -46,7 +46,7 @@ function App() {
             <RecipeContainer
               recipes={searchedRecipe}
               recipesToTry={recipesToTry}
-              handleAddNewRecipe={handleAddNewRecipe}
+              // handleAddNewRecipe={handleAddNewRecipe}
               handleAddToTryList={handleAddToTryList}
               handleRemoveFromTryList={handleRemoveFromTryList}
               setSearchTerm={setSearchTerm}
@@ -57,7 +57,9 @@ function App() {
             <About />  
           </Route>
           <Route path="/addRecipe">
-            <AddRecipe />  
+            <AddRecipe 
+            addNewRecipe={handleAddNewRecipe} 
+            />  
           </Route>
         </Switch>
     </div>

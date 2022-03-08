@@ -2,11 +2,11 @@ import React from 'react'
 import RecipeList from './RecipeList'
 import RecipesToTry from './RecipesToTry'
 import Search from './Search'
-import AddRecipe from './AddRecipe'
+// import AddRecipe from './AddRecipe'
 
 function RecipeContainer({
   recipes, 
-  handleAddNewRecipe, 
+  // handleAddNewRecipe, 
   handleAddToTryList, 
   handleRemoveFromTryList, 
   setSearchTerm, 
@@ -29,9 +29,9 @@ function RecipeContainer({
         recipes={recipes}
         onRecipeClick={handleAddToTryList}
       />
-      <AddRecipe 
+      {/* <AddRecipe 
         addNewRecipe={handleAddNewRecipe}
-      />
+      /> */}
     </>
   )
 }
