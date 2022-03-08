@@ -23,3 +23,13 @@ code {
 .logo{
   font-size: 40px;
 }
+
+.about{
+  font-size: 20px;
+}
+
+/* a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+} */
