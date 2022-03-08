@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import { FiTrash2 } from 'react-icons/fi'
 import RecipeDetail from './RecipeDetail'
 
-function RecipeCard({ recipe, id, onRecipeClick, onRemoveRecipe }) {
+function RecipeCard({ recipe, onRecipeClick, onRemoveRecipe }) {
   const [showDetail, setShowDetail] = useState(false)
   const [likes, setLikes] = useState(0)
 
@@ -16,18 +16,18 @@ function RecipeCard({ recipe, id, onRecipeClick, onRemoveRecipe }) {
     setLikes((likes) => likes + 1)
   }
 
-  function handleAddLike(e) {
-    e.stopPropagation()
-    fetch('http://localhost:3000/recipes', {
-      method: "POST", 
-      headers: {
-        "Content-Type": "application/json"
-      }, 
-      body: JSON.stringify(likes)
-    })
-      .then(response => response.json())
-      .then(handleLike)
-  }
+  // function handleAddLike(e) {
+  //   e.stopPropagation()
+  //   fetch('http://localhost:3000/recipes', {
+  //     method: "POST", 
+  //     headers: {
+  //       "Content-Type": "application/json"
+  //     }, 
+  //     body: JSON.stringify(likes)
+  //   })
+  //     .then(response => response.json())
+  //     .then(handleLike(likes))
+  // }
     
   function handleDelete(e){
     e.stopPropagation()
@@ -42,7 +42,7 @@ function RecipeCard({ recipe, id, onRecipeClick, onRemoveRecipe }) {
       <h4>{recipe.name}</h4>
       <img src={recipe.imageURL} alt={recipe.name}/>
       {showDetail && <RecipeDetail recipe={recipe} />}
-      <button onClick={handleAddLike}> 💖 {likes} </button>
+      <button onClick={handleLike}> 💖 {likes} </button>
       <button onClick={e => handleDelete(e)}><FiTrash2 /></button>
       <button
         className="ui button"

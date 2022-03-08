@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect, useRef} from 'react'
 
 function AddRecipe({ addNewRecipe }) {
   const [formRecipeData, setFormRecipeData] = useState({ 
@@ -7,6 +7,12 @@ function AddRecipe({ addNewRecipe }) {
     steps:"",
     imageURL:"",
     originalURL:""
+  })
+
+  const nameInputRef = useRef(null)
+
+  useEffect(() => {
+    nameInputRef.current.focus()
   })
   
   function handleChange(e) {
@@ -41,18 +47,23 @@ function AddRecipe({ addNewRecipe }) {
 
   return (
     <>
+    <br></br>
       <div>AddRecipe</div>
-      <form onSubmit={(e => handleAddRecipeData(e))}>
+      <form className='ui form' onSubmit={(e => handleAddRecipeData(e))}>
+      <div className='required six wide field'>
       <label htmlFor="recipeName">Recipe Name: </label>
         <input
             type="text"
             name="name"
+            ref={nameInputRef}
             value={formRecipeData.name}
             id={FormData.name}
             onChange={(e => handleChange(e))}
+            placeholder="Recipe Name"
         >
         </input>
-        <br></br>
+        </div>
+        <div className='required six wide field'>
         <label htmlFor="ingredients">Ingredients: </label>
         <textarea
             type="text"
@@ -62,9 +73,11 @@ function AddRecipe({ addNewRecipe }) {
             onChange={(e => handleChange(e))}
             rows="4"
             cols="50"
+            placeholder="List Ingredients"
         >
         </textarea>
-        <br></br>
+        </div>
+        <div className='required six wide field'>
         <label htmlFor="steps">Recipe Steps: </label>
         <textarea
             type="text"
@@ -74,9 +87,11 @@ function AddRecipe({ addNewRecipe }) {
             onChange={(e => handleChange(e))}
             rows="4"
             cols="50"
+            placeholder="List Recipe Steps"
         >
         </textarea>
-        <br></br>
+        </div>
+        <div className='six wide field'>
         <label htmlFor="imageURL">Image URL: </label>
         <input
             type="text"
@@ -84,9 +99,11 @@ function AddRecipe({ addNewRecipe }) {
             value={formRecipeData.imageURL}
             id={FormData.imageURL}
             onChange={(e => handleChange(e))}
+            placeholder="Image Link"
         >
         </input>
-        <br></br>
+        </div>
+        <div className='six wide field'>
         <label htmlFor="originalURL">Source URL: </label>
         <input
             type="text"
@@ -94,10 +111,11 @@ function AddRecipe({ addNewRecipe }) {
             value={formRecipeData.originalURL}
             id={FormData.originalURL}
             onChange={(e => handleChange(e))}
+            placeholder="Source Link"
         >
         </input>
-        <br></br>
-        <button type="submit">Add Recipe</button>
+        </div>
+        <button className="ui submit button" type="submit">Add Recipe</button>
       </form>
     </>
   )
