@@ -1,7 +1,6 @@
-
-   
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { FiHome, FiInfo, FiPlusSquare } from 'react-icons/fi'
 
 const linkStyles = {
   display: "inline-block",
@@ -25,7 +24,7 @@ function NavBar() {
           background: "grey",
         }}
       >
-        Home
+        <FiHome /> Home
       </NavLink>
       <NavLink
         to="/about"
@@ -35,7 +34,7 @@ function NavBar() {
           background: "grey",
         }}
       >
-        About
+      <FiInfo /> About
       </NavLink>
       <NavLink
         to="/AddRecipe"
@@ -45,7 +44,7 @@ function NavBar() {
           background: "grey",
         }}
       >
-        Add Recipe
+        <FiPlusSquare />Add Recipe
       </NavLink>
     </div>
   );
