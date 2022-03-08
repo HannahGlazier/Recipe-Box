@@ -3,7 +3,6 @@ import RecipeCard from './RecipeCard'
 
 
 function RecipeList({ recipes, onRecipeClick }) {
-  // console.log(recipes)
   const mappedRecipes = recipes.map(recipe => (
     <RecipeCard
       key={recipe.id}
