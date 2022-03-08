@@ -46,9 +46,9 @@ function AddRecipe({ addNewRecipe }) {
 
 
   return (
-    <>
-    <br></br>
-      <div>AddRecipe</div>
+    <div className="border">
+      <br></br>
+      <h1 className="addRecipe">AddRecipe</h1>
       <form className='ui form' onSubmit={(e => handleAddRecipeData(e))}>
       <div className='required six wide field'>
       <label htmlFor="recipeName">Recipe Name: </label>
@@ -117,7 +117,7 @@ function AddRecipe({ addNewRecipe }) {
         </div>
         <button className="ui submit button" type="submit">Add Recipe</button>
       </form>
-    </>
+    </div>
   )
 
 }

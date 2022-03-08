@@ -1,6 +1,6 @@
 import React from 'react'
+import '../index.css'
 import RecipeCard from './RecipeCard'
-
 
 function RecipeList({ recipes, onRecipeClick, onRemoveRecipe }) {
   const mappedRecipes = recipes.map(recipe => (
@@ -15,7 +15,10 @@ function RecipeList({ recipes, onRecipeClick, onRemoveRecipe }) {
   
   return (
     <>
-    <div className="ui four stackable cards recipeTile">{mappedRecipes}</div>
+      <h1>Recipe Library</h1>
+      <div className="border">
+        <div className="ui four stackable cards recipeTile">{mappedRecipes}</div>
+      </div>
     </>
   )
 }

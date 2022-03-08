@@ -6,16 +6,24 @@ function Search({searchTerm, setSearchTerm}) {
     setSearchTerm(e.target.value)
   }
 
-  return (   
-    <div>
-      <label htmlFor="search">Search Recipes    </label>
+  return (  
+    <div className='ui menu'>
+    <div className='item'>  
+    <div className='ui search'>
+      <div className='ui icon input'>
+      {/* <label htmlFor="search">Search Recipes    </label> */}
       <input
         type="text"
         id="search"
-        placeholder="type to search..."
+        placeholder="search for recipes..."
         value={searchTerm}
         onChange={e => handleSearch(e)}
+        className="prompt"
       />
+      <i class="search icon"></i>
+    </div>
+    </div>
+    </div>
     </div>
   )
 }

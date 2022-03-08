@@ -4,6 +4,7 @@ import NavBar from './components/NavBar'
 import RecipeContainer from './components/RecipeContainer'
 import About from './components/About';
 import AddRecipe from './components/AddRecipe';
+import './index.css';
 
 function App() {
 
@@ -44,12 +45,15 @@ function App() {
     
     const newRecipes = recipes.filter(recipeId => recipeId !== recipe)
     setRecipes(newRecipes)
+    const newTryList = recipesToTry.filter(individualRecipe => individualRecipe !== recipe)
+    setRecipesToTry(newTryList)
+
   }
   
 
     return (
     
-    <div>
+    <div className = "App">
         <NavBar />
         <Switch>
           <Route exact path='/' >

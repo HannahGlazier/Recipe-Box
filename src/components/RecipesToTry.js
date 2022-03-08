@@ -1,4 +1,5 @@
 import React from 'react'
+import '../index.css'
 import RecipeCard from './RecipeCard'
 
 function RecipesToTry( {recipesToTry, onRecipeClick, onRemoveRecipe} ) {
@@ -14,7 +15,10 @@ function RecipesToTry( {recipesToTry, onRecipeClick, onRemoveRecipe} ) {
 
   return (
     <>
-    <div className="ui four stackable cards recipeTile">{mappedRecipesToTry}</div>
+      <h1>My Recipe List</h1>
+      <div className="border">
+        <div className="ui four stackable cards recipeTile">{mappedRecipesToTry}</div>
+      </div>
     </>
   )
 }

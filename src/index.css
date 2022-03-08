@@ -16,20 +16,43 @@ code {
   text-align: center;
 }
 
-.navStyling{
+/* .navStyling{
   float: right;
-}
-
+} */
+ 
 .logo{
   font-size: 40px;
-}
+  float: left;
+} 
 
 .about{
   font-size: 20px;
+}
+
+.app {
+  margin: 0% 5% 0% 5%;
+  text-align: center;
+}
+
+h1 {
+  font-size: 20px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.border {
+  margin: 30px;
+  padding: 20px;
+  border-style: solid;
+  background-color: #E6E6E8;
+}
+
+.addRecipe {
+  text-align: center;
 }
 
 /* a:link {
   color: green;
   background-color: transparent;
   text-decoration: none;
-} */
+}  */

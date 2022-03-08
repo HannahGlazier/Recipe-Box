@@ -42,7 +42,7 @@ function RecipeCard({ recipe, onRecipeClick, onRemoveRecipe }) {
       <h4>{recipe.name}</h4>
       <img src={recipe.imageURL} alt={recipe.name}/>
       {showDetail && <RecipeDetail recipe={recipe} />}
-      <button onClick={handleLike}> 💖 {likes} </button>
+      <button onClick={handleLike}> ♡ {likes} </button>
       <button onClick={e => handleDelete(e)}><FiTrash2 /></button>
       <button
         className="ui button"
