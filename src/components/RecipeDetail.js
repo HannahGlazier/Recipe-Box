@@ -5,7 +5,6 @@ function RecipeDetail({ recipe }) {
         <ul key={ingredient.name + ingredient.quantity}>
             <li>Name: {ingredient.name}</li>
             <li>Quantity: {ingredient.quantity}</li>
-            <li>Type: {ingredient.type}</li>
         </ul>
 
     ))
