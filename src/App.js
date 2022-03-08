@@ -17,7 +17,8 @@ function App() {
     .then(recipes => setRecipes(recipes))
   }, [])
 
-  function handleAddToTryList(recipe) {
+  function handleAddToTryList(e, recipe) {
+    e.stopPropagation() 
     if(!recipesToTry.includes(recipe)){
       setRecipesToTry([...recipesToTry, recipe])
     }
@@ -31,7 +32,8 @@ function App() {
     recipe.name.toLowerCase().includes(searchTerm.toLowerCase())
   )
 
-  function handleRemoveFromTryList(recipe){
+  function handleRemoveFromTryList(e, recipe){
+    e.stopPropagation()
     const newTryList = recipesToTry.filter(individualRecipe => individualRecipe !== recipe)
     setRecipesToTry(newTryList)
   }
