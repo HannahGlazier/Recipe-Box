@@ -2,12 +2,14 @@ import React from 'react'
 import RecipeCard from './RecipeCard'
 
 
-function RecipeList({ recipes, onRecipeClick }) {
+function RecipeList({ recipes, onRecipeClick, onRemoveRecipe }) {
   const mappedRecipes = recipes.map(recipe => (
     <RecipeCard
       key={recipe.id}
       recipe={recipe}
+      id={recipe.id}
       onRecipeClick={onRecipeClick}
+      onRemoveRecipe={onRemoveRecipe}
     />
   ))
   

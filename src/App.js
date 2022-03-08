@@ -38,6 +38,14 @@ function App() {
     setRecipesToTry(newTryList)
   }
 
+  function handleRemoveRecipe(recipe){
+
+    fetch(`http://localhost:3000/recipes/${recipe.id}`, {method: "DELETE"})
+    
+    const newRecipes = recipes.filter(recipeId => recipeId !== recipe)
+    setRecipes(newRecipes)
+  }
+  
 
     return (
     
@@ -53,6 +61,7 @@ function App() {
               handleRemoveFromTryList={handleRemoveFromTryList}
               setSearchTerm={setSearchTerm}
               searchTerm={searchTerm}
+              onRemoveRecipe={handleRemoveRecipe}
             />
           </Route>
           <Route path="/about">

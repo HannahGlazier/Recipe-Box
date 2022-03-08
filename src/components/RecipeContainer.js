@@ -11,7 +11,8 @@ function RecipeContainer({
   handleRemoveFromTryList, 
   setSearchTerm, 
   searchTerm,
-  recipesToTry
+  recipesToTry,
+  onRemoveRecipe
 })
 {
 
@@ -24,10 +25,13 @@ function RecipeContainer({
       <RecipesToTry 
         recipesToTry={recipesToTry}
         onRecipeClick={handleRemoveFromTryList}
+        onRemoveRecipe={onRemoveRecipe}
+
       />
       <RecipeList 
         recipes={recipes}
         onRecipeClick={handleAddToTryList}
+        onRemoveRecipe={onRemoveRecipe}
       />
       {/* <AddRecipe 
         addNewRecipe={handleAddNewRecipe}
