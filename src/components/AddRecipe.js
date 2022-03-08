@@ -3,12 +3,9 @@ import React, {useState} from 'react'
 function AddRecipe({ addNewRecipe }) {
   const [formRecipeData, setFormRecipeData] = useState({ 
     name: "",
-    ingredients: {
-        quantity: "",
-        name:""
-    },
+    ingredients: "",
     steps:"",
-    imgURL:"",
+    imageURL:"",
     originalURL:""
   })
   
@@ -24,12 +21,9 @@ function AddRecipe({ addNewRecipe }) {
     
     const newRecipe = {
         name: formRecipeData.name,
-        ingredients: { 
-          quantity: formRecipeData.ingredients.quantity,
-          name: formRecipeData.ingredients.name,
-      },
+        ingredients: formRecipeData.ingredients,
         steps: formRecipeData.steps,
-        imgURL: formRecipeData.imgURL,
+        imageURL: formRecipeData.imageURL,
         originalURL: formRecipeData.originalURL
     }
 
@@ -59,6 +53,18 @@ function AddRecipe({ addNewRecipe }) {
         >
         </input>
         <br></br>
+        <label htmlFor="ingredients">Ingredients: </label>
+        <textarea
+            type="text"
+            name="ingredients"
+            value={formRecipeData.ingredients}
+            id={FormData.ingredients}
+            onChange={(e => handleChange(e))}
+            rows="4"
+            cols="50"
+        >
+        </textarea>
+        <br></br>
         <label htmlFor="steps">Recipe Steps: </label>
         <textarea
             type="text"
@@ -71,12 +77,12 @@ function AddRecipe({ addNewRecipe }) {
         >
         </textarea>
         <br></br>
-        <label htmlFor="imgURL">Image URL: </label>
+        <label htmlFor="imageURL">Image URL: </label>
         <input
             type="text"
-            name="imgURL"
-            value={formRecipeData.imgURL}
-            id={FormData.imgURL}
+            name="imageURL"
+            value={formRecipeData.imageURL}
+            id={FormData.imageURL}
             onChange={(e => handleChange(e))}
         >
         </input>
