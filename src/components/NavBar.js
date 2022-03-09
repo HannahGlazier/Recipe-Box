@@ -1,7 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { FiHome, FiInfo, FiPlusSquare, FiInbox } from 'react-icons/fi'
-import { GiOpenChest } from "react-icons/gi";
+import { FiHome, FiInfo, FiPlusSquare} from 'react-icons/fi'
 
 // const linkStyles = {
 //   display: "inline-block",
