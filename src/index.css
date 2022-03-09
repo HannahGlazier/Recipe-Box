@@ -12,18 +12,11 @@ code {
     monospace;
 }
 
-.recipeTile {
+/* .recipeTile {
   text-align: center;
-}
-
-/* .navStyling{
-  float: right;
+  width: 100%;
+  height: 15vw;
 } */
- 
-/* .logo{
-  font-size: 40px;
-  float: left;
-}  */
 
 .about{
   font-size: 20px;
@@ -31,11 +24,14 @@ code {
 
 .addRecipeBorder {
   margin: 30px;
-  padding: 20px;
+  /* padding: center; */
+  /* padding-left: 400px; */
   /* text-align: center; */
+  
   border-style: solid;
   background-color: #E6E6E8;
 }
+
 
 .app {
   margin: 0% 5% 0% 5%;
@@ -48,11 +44,32 @@ h1 {
   text-align: center;
 }
 
+h4 {
+  font-size: 14px;
+  font-weight: 400;
+  text-align: left;
+}
+
+h5 {
+  font-size: 15px;
+  font-weight: 900;
+  text-align: center;
+}
+
 .border {
   margin: 30px;
   padding: 20px;
   border-style: solid;
   background-color: #E6E6E8;
+}
+
+.divider {
+  border-width: thin;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  padding: 0px;
+  border-color: lightgray;
+  border-style: solid;
 }
 
 .addRecipe {

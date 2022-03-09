@@ -17,8 +17,17 @@ function RecipeDetail({ recipe }) {
 
     return (
         <div>
-            <h5>Ingredients: {newSplitIngredient}</h5>
-            <h5>Steps: {newSplitSteps}</h5>
+            <p className="divider"></p>
+            <h5>Ingredients</h5>
+            <p className="divider"></p>
+            <h4>{newSplitIngredient}</h4>
+            <p className="divider"></p>
+            <h5>Steps</h5>
+            <p className="divider"></p>
+            <h4>{newSplitSteps}</h4>
+            <div className ="addRecipe">
+                <a href={recipe.originalURL} target="_blank" rel="noreferrer">Full Recipe</a>
+            </div>
         </div>
     )
 }

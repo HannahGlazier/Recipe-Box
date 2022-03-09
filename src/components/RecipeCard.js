@@ -36,12 +36,12 @@ function RecipeCard({ recipe, onRecipeClick, onRemoveRecipe }) {
 
   return (
     <div 
-    className="ui card"
+    className="ui card recipeTile"
     onClick={(e) => onRecipeClick(e, recipe)}
     >
-      <h4>{recipe.name}</h4>
+      <h5>{recipe.name}</h5>
       <img src={recipe.imageURL} alt={recipe.name}/>
-      {showDetail && <RecipeDetail recipe={recipe} />}       
+      {showDetail && <RecipeDetail recipe={recipe} />} 
       <button onClick={handleLike}> {likes ? `★ ${likes}` : ` ☆ ${likes}`} </button>
       <button onClick={e => handleDelete(e)}><FiTrash2 /></button>
       <button
