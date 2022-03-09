@@ -21,7 +21,7 @@ function RecipeCard({ recipe, onRecipeClick, onRemoveRecipe }) {
   //   fetch('http://localhost:3000/recipes', {
   //     method: "POST", 
   //     headers: {
-  //       "Content-Type": "application/json"
+  //       "Content-Type": "application/json",
   //     }, 
   //     body: JSON.stringify(likes)
   //   })
@@ -42,7 +42,7 @@ function RecipeCard({ recipe, onRecipeClick, onRemoveRecipe }) {
       <h4>{recipe.name}</h4>
       <img src={recipe.imageURL} alt={recipe.name}/>
       {showDetail && <RecipeDetail recipe={recipe} />}       
-      <button onClick={handleLike}> {likes ? `❤ ${likes}` : `♡ ${likes}`} </button>
+      <button onClick={handleLike}> {likes ? `★ ${likes}` : ` ☆ ${likes}`} </button>
       <button onClick={e => handleDelete(e)}><FiTrash2 /></button>
       <button
         className="ui button"

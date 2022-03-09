@@ -6,7 +6,8 @@ function AddRecipe({ addNewRecipe }) {
     ingredients: "",
     steps:"",
     imageURL:"",
-    originalURL:""
+    originalURL:"",
+    likes: 0
   })
 
   const nameInputRef = useRef(null)
