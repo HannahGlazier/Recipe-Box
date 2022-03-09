@@ -1,6 +1,6 @@
 import React from "react";
 
-function Search({ searchTerm, setSearchTerm }) {
+function Search({ searchTerm, setSearchTerm, sortBy, onChangeSortBy }) {
   function handleSearch(e) {
     setSearchTerm(e.target.value);
   }
@@ -25,10 +25,14 @@ function Search({ searchTerm, setSearchTerm }) {
       </div>
       <div className="right menu">
         <div className="ui item">
-          <label>Filter By</label>
+          <label>Sort By: </label>
         </div>
         <div className="ui item">
-          <select className="ui selection dropdown">
+          <select 
+            className="ui selection dropdown"
+            value={sortBy}
+            onChange={(e) => onChangeSortBy(e.target.value)}
+          >
             <option value="default">Default</option>
             <option value="name">Name</option>
           </select>

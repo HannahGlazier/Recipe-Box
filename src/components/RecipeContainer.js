@@ -12,7 +12,9 @@ function RecipeContainer({
   setSearchTerm, 
   searchTerm,
   recipesToTry,
-  onRemoveRecipe
+  onRemoveRecipe,
+  sortBy,
+  onChangeSortBy
 })
 {
 
@@ -21,6 +23,8 @@ function RecipeContainer({
       <Search
         searchTerm={searchTerm} 
         setSearchTerm={setSearchTerm}
+        sortBy={sortBy}
+        onChangeSortBy={onChangeSortBy}
       />
       <RecipesToTry 
         recipesToTry={recipesToTry}

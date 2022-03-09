@@ -28,7 +28,7 @@ function RecipeCard({ recipe, onRecipeClick, onRemoveRecipe }) {
   //     .then(response => response.json())
   //     .then(handleLike(likes))
   // }
-    
+
   function handleDelete(e){
     e.stopPropagation()
     onRemoveRecipe(recipe)
@@ -41,8 +41,8 @@ function RecipeCard({ recipe, onRecipeClick, onRemoveRecipe }) {
     >
       <h4>{recipe.name}</h4>
       <img src={recipe.imageURL} alt={recipe.name}/>
-      {showDetail && <RecipeDetail recipe={recipe} />}
-      <button onClick={handleLike}> ♡ {likes} </button>
+      {showDetail && <RecipeDetail recipe={recipe} />}       
+      <button onClick={handleLike}> {likes ? `❤ ${likes}` : `♡ ${likes}`} </button>
       <button onClick={e => handleDelete(e)}><FiTrash2 /></button>
       <button
         className="ui button"

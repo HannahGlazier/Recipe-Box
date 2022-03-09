@@ -12,6 +12,7 @@ function App() {
   const [recipes, setRecipes] = useState([])
   const [recipesToTry, setRecipesToTry] = useState([])
   const [searchTerm, setSearchTerm] = useState("")
+  const [sortBy, setSortBy] = useState('default')
 
   useEffect(() => {
     fetch('http://localhost:3000/recipes')
@@ -30,9 +31,15 @@ function App() {
     setRecipes([...recipes, newRecipe])
   }
 
-  const searchedRecipe = recipes.filter((recipe) =>
-    recipe.name.toLowerCase().includes(searchTerm.toLowerCase())
-  )
+  const searchedSortedRecipe = recipes
+    .filter(recipe =>recipe.name.toLowerCase().includes(searchTerm.toLowerCase()))
+    .sort((recipe1, recipe2) => {
+        if(sortBy === 'default'){
+          return recipe1.id - recipe2.id
+        } else {
+            return recipe1.name.localeCompare(recipe2.name)
+  }
+  })
 
   function handleRemoveFromTryList(e, recipe){
     e.stopPropagation()
@@ -51,6 +58,13 @@ function App() {
 
   }
   
+  // const sortedRecipes = recipes.sort((recipe1, recipe2) => {
+  //   if(sortBy === 'name'){
+  //     return recipe1.name - recipe2.name
+  //   } else {
+  //     return recipe1.id.localCompare(recipe2.id)
+  //   }
+  // })
 
     return (
     
@@ -60,7 +74,7 @@ function App() {
         <Switch>
           <Route exact path='/' >
             <RecipeContainer
-              recipes={searchedRecipe}
+              recipes={searchedSortedRecipe}
               recipesToTry={recipesToTry}
               // handleAddNewRecipe={handleAddNewRecipe}
               handleAddToTryList={handleAddToTryList}
@@ -68,6 +82,8 @@ function App() {
               setSearchTerm={setSearchTerm}
               searchTerm={searchTerm}
               onRemoveRecipe={handleRemoveRecipe}
+              sortBy={sortBy}
+              onChangeSortBy={setSortBy}
             />
           </Route>
           <Route path="/about">

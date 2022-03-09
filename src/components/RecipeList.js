@@ -17,7 +17,7 @@ function RecipeList({ recipes, onRecipeClick, onRemoveRecipe }) {
     <>
       <h1>Recipe Library</h1>
       <div className="border">
-        <div className="ui four stackable cards recipeTile">{mappedRecipes}</div>
+        <div className="ui five stackable cards recipeTile">{mappedRecipes}</div>
       </div>
     </>
   )

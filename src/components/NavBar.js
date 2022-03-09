@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { FiHome, FiInfo, FiPlusSquare} from 'react-icons/fi'
+import { FiHome, FiInfo, FiPlusSquare } from "react-icons/fi";
 
 // const linkStyles = {
 //   display: "inline-block",
@@ -18,8 +18,7 @@ function NavBar() {
       <NavLink
         to="/"
         exact
-        className='active item'
-      
+        className="active item"
         activeStyle={{
           background: "#E6E6E8",
         }}
@@ -29,22 +28,23 @@ function NavBar() {
       <NavLink
         to="/about"
         exact
-        className='item'
+        className="item"
         activeStyle={{
           background: "#E6E6E8",
         }}
       >
-      <FiInfo /> About
+        <FiInfo /> About
       </NavLink>
       <NavLink
         to="/AddRecipe"
         exact
-        className='item'
+        className="item"
         activeStyle={{
           background: "#E6E6E8",
         }}
       >
-        <FiPlusSquare />Add Recipe
+        <FiPlusSquare />
+        Add Recipe
       </NavLink>
     </div>
   );
