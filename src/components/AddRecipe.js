@@ -13,7 +13,7 @@ function AddRecipe({ addNewRecipe }) {
 
   useEffect(() => {
     nameInputRef.current.focus()
-  })
+  }, [])
   
   function handleChange(e) {
     setFormRecipeData({
