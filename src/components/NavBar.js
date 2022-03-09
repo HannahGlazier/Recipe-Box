@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { FiHome, FiInfo, FiPlusSquare, FiInbox } from 'react-icons/fi'
+import { GiOpenChest } from "react-icons/gi";
 
 // const linkStyles = {
 //   display: "inline-block",
@@ -15,7 +16,6 @@ import { FiHome, FiInfo, FiPlusSquare, FiInbox } from 'react-icons/fi'
 function NavBar() {
   return (
     <div className="ui three item menu">
-    {/* <FiInbox className='header item'/> Recipe Box */}
       <NavLink
         to="/"
         exact

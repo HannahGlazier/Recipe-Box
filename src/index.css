@@ -20,13 +20,21 @@ code {
   float: right;
 } */
  
-.logo{
+/* .logo{
   font-size: 40px;
   float: left;
-} 
+}  */
 
 .about{
   font-size: 20px;
+}
+
+.addRecipeBorder {
+  margin: 30px;
+  padding: 20px;
+  /* text-align: center; */
+  border-style: solid;
+  background-color: #E6E6E8;
 }
 
 .app {
@@ -51,8 +59,7 @@ h1 {
   text-align: center;
 }
 
-/* a:link {
-  color: green;
-  background-color: transparent;
-  text-decoration: none;
-}  */
+.header {
+  font-size: 30px;
+}
+

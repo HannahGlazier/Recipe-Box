@@ -46,7 +46,7 @@ function AddRecipe({ addNewRecipe }) {
 
 
   return (
-    <div className="border">
+    <div className="addRecipeBorder">
       <br></br>
       <h1 className="addRecipe">AddRecipe</h1>
       <form className='ui form' onSubmit={(e => handleAddRecipeData(e))}>

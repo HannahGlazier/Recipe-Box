@@ -4,6 +4,7 @@ import NavBar from './components/NavBar'
 import RecipeContainer from './components/RecipeContainer'
 import About from './components/About';
 import AddRecipe from './components/AddRecipe';
+import Header from './components/Header';
 import './index.css';
 
 function App() {
@@ -54,6 +55,7 @@ function App() {
     return (
     
     <div className = "App">
+      <Header />
         <NavBar />
         <Switch>
           <Route exact path='/' >
