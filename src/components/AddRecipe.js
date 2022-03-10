@@ -65,9 +65,14 @@ function AddRecipe({ addNewRecipe }) {
       <h1 className="addRecipe">AddRecipe</h1>
       <div className="addRecipeBorder test">
         <div className="ui grid">
-          <form className="ui form center" onSubmit={(e) => handleAddRecipeData(e)}>
+          <form
+            className="ui form center"
+            onSubmit={(e) => handleAddRecipeData(e)}
+          >
             <div className="required fifteen wide field">
-              <label className="center" htmlFor="recipeName">Recipe Name: </label>
+              <label className="center" htmlFor="recipeName">
+                Recipe Name:{" "}
+              </label>
               <input
                 type="text"
                 name="name"
@@ -79,7 +84,9 @@ function AddRecipe({ addNewRecipe }) {
               ></input>
             </div>
             <div className="required fifteen wide field">
-              <label className="center" htmlFor="ingredients">Ingredients: </label>
+              <label className="center" htmlFor="ingredients">
+                Ingredients:{" "}
+              </label>
               <textarea
                 type="text"
                 name="ingredients"
@@ -88,11 +95,13 @@ function AddRecipe({ addNewRecipe }) {
                 onChange={(e) => handleChange(e)}
                 rows="4"
                 cols="50"
-                placeholder="List Ingredients"
+                placeholder="List Ingredients - Please separate each ingredient by a comma"
               ></textarea>
             </div>
             <div className="required fifteen wide field">
-              <label className="center" htmlFor="steps">Recipe Steps: </label>
+              <label className="center" htmlFor="steps">
+                Recipe Steps:{" "}
+              </label>
               <textarea
                 type="text"
                 name="steps"
@@ -101,11 +110,13 @@ function AddRecipe({ addNewRecipe }) {
                 onChange={(e) => handleChange(e)}
                 rows="4"
                 cols="50"
-                placeholder="List Recipe Steps"
+                placeholder="List Recipe Steps - Please separate each step by a period"
               ></textarea>
             </div>
             <div className="fifteen wide field">
-              <label className="center" htmlFor="imageURL">Image URL: </label>
+              <label className="center" htmlFor="imageURL">
+                Image URL:{" "}
+              </label>
               <input
                 type="text"
                 name="imageURL"
@@ -116,7 +127,9 @@ function AddRecipe({ addNewRecipe }) {
               ></input>
             </div>
             <div className="fifteen wide field">
-              <label className="center" htmlFor="originalURL">Source URL: </label>
+              <label className="center" htmlFor="originalURL">
+                Source URL:{" "}
+              </label>
               <input
                 type="text"
                 name="originalURL"
@@ -128,8 +141,7 @@ function AddRecipe({ addNewRecipe }) {
             </div>
             <button className="ui submit button center" type="submit">
               Add Recipe
-            </button>  
-           
+            </button>
           </form>
         </div>
       </div>

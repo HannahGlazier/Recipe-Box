@@ -17,7 +17,7 @@ function RecipesToTry( {recipesToTry, onRecipeClick, onRemoveRecipe} ) {
     <>
       <h1>My Recipe List</h1>
       <div className="border">
-        <div className="ui four stackable cards recipeTile">{mappedRecipesToTry}</div>
+        <div className="ui five cards">{mappedRecipesToTry}</div>
       </div>
     </>
   )

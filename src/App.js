@@ -57,7 +57,8 @@ function App() {
     setRecipesToTry(newTryList)
 
   }
-  
+
+
   // const sortedRecipes = recipes.sort((recipe1, recipe2) => {
   //   if(sortBy === 'name'){
   //     return recipe1.name - recipe2.name

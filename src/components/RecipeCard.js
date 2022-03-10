@@ -11,13 +11,6 @@ function RecipeCard({ recipe, onRecipeClick, onRemoveRecipe }) {
     setShowDetail(!showDetail)
   }
 
-  // function handleLike(e) {
-  //   e.stopPropagation()
-  //   setLikes((likes) => likes + 1)
-  // }
-
-  
-
   function handleAddLike(e) {
     e.stopPropagation()
     fetch(`http://localhost:3000/recipes/${recipe.id}`, {
@@ -35,8 +28,6 @@ function RecipeCard({ recipe, onRecipeClick, onRemoveRecipe }) {
     onRemoveRecipe(recipe)
   }
 
-  // const updatedRecs = recipies.map(rec => rec.id == id ? {...rec, likes: likes + 1} : rec)
-  // setRecipes(updatedRecs)
   return (
     <div 
     className="ui card background"
@@ -59,3 +50,9 @@ function RecipeCard({ recipe, onRecipeClick, onRemoveRecipe }) {
   }
 
 export default RecipeCard
+
+
+
+
+ // const updatedRecs = recipies.map(rec => rec.id == id ? {...rec, likes: likes + 1} : rec)
+  // setRecipes(updatedRecs)

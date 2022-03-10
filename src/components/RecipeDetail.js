@@ -33,16 +33,3 @@ function RecipeDetail({ recipe }) {
 }
 
 export default RecipeDetail
-
-    // const mappedIngredientName = recipe.ingredients.map(ingredient => (
-    //     <ul key={ingredient.name + ingredient.quantity}>
-    //         <li>Name: {ingredient.name}</li>
-    //         <li>Quantity: {ingredient.quantity}</li>
-    //     </ul>
-    // ))
-
-    // const recipeSteps = recipe.steps.map(step => (
-    //     <ul key={step}>
-    //         <li>{step} </li>
-    //     </ul>
-    // ))

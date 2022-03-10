@@ -10,7 +10,6 @@ function Search({ searchTerm, setSearchTerm, sortBy, onChangeSortBy }) {
       <div className="item">
         <div className="ui search">
           <div className="ui icon input">
-            {/* <label htmlFor="search">Search Recipes    </label> */}
             <input
               type="text"
               id="search"
