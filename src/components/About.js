@@ -1,8 +1,17 @@
 import React from 'react'
 import '../index.css'
 import { SiGithub } from "react-icons/si"
+import RecipeCard from './RecipeCard'
 
-function About() {
+function About({recipes}) {
+  const mappedRecipes = recipes.map(recipe => (
+    <RecipeCard
+      key={recipe.id}
+      recipe={recipe}
+      id={recipe.id}
+    />
+  ))
+
   return (
     <div>
       <br></br>
@@ -20,6 +29,17 @@ function About() {
           You can also sort and search by recipe name.
         </p>
 
+        <p className="divider"></p>
+        <h5>Here are some of our favorites</h5>
+        
+        <br></br>
+        <div className="ui four small cards" >
+          {mappedRecipes[22]}
+          {mappedRecipes[23]}
+          {mappedRecipes[16]}
+          {mappedRecipes[8]}
+        </div>
+        <br></br>
         <p className="divider"></p>
 
         <h2>Created by</h2>

@@ -79,12 +79,10 @@ function App() {
             />
           </Route>
           <Route path="/about">
-            <About />  
+            <About recipes={recipes}/>  
           </Route>
           <Route path="/addRecipe">
-            <AddRecipe 
-            addNewRecipe={handleAddNewRecipe} 
-            />  
+            <AddRecipe addNewRecipe={handleAddNewRecipe} />  
           </Route>
         </Switch>
     </div>

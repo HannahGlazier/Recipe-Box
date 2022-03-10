@@ -16,7 +16,7 @@ function RecipeDetail({ recipe }) {
         ))
 
     return (
-        <div>
+        <div className="scroll">
             <p className="divider"></p>
             <h5>Ingredients</h5>
             <p className="divider"></p>

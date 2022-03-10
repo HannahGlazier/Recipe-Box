@@ -21,18 +21,11 @@
     {
       "id": 3,
       "name": "Curried Lentils and Rice",
-      "ingredients": "1 quart beef broth, 1 cup dried green lentils, 1/2 cup basmati rice, 1 tsp curry powder, 1 tsp salt",
-      "steps": "Bring broth to a low boil. Add curry powder and salt. Cook lentils for 20 minutes. Add rice and simmer for 20 minutes. Enjoy!",
-      "imageURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4MeMpudTU2HY-1yHxrsAk70MnQu9xVb4KUQ&usqp=CAU",
+      "ingredients": "2 cups of rice, 2 yellow onions - diced, 2 cloves garlic minced, 2-3 tbsp olive oil, 1 lime -juiced and strained, 2 tbsp curry powder, 1 tbsp paprika, 1 tbsp chili powder, 1 cup green lentils, 3 cups water, 1/2 tsp salt, Chives to garnish (optional), Coconut milk (optional)",
+      "steps": "Rinse and drain rice until the water runs clear. If you have a rice cooker, cook according to manufacturer's directions Otherwise, cook rice in 1:2 ratio (1 cup rice: 2 cups water), simmering until water is absorbed (about 20 minutes). Over medium heat, sautÃ© onions and garlic for 3-4 minutes or until the onions are translucent and the garlic is fragrant. Add lime juice, curry powder, paprika, and chili powder and stir until fragrant. Add lentils and water and bring to a boil on high heat then bring down to a simmer. Cover and let simmer for about 30 minutes (you can check at the 20 minute mark to see how tender you want them to be. Add liquid if you think it needs more, have a little taste test here too to see if the spices are enough). Add salt to taste, stir, and add to your rice",
+      "imageURL": "https://thevietvegan.com/wp-content/uploads/2012/05/img_5947-735x735.jpg",
+      "originalURL": "https://thevietvegan.com/curried-lentils-and-rice/",
       "likes": 1
-    },
-    {
-      "id": 4,
-      "name": "Big Night Pizza",
-      "ingredients": "5 teaspoons yeast, 5 cups flour, 4 tablespoons vegetable oil, 2 tablespoons sugar, 2 teaspoons salt, 2 cups hot water, 1/4 cup pizza sauce, 3/4 cup mozzarella cheese",
-      "steps": "Add hot water to yeast in a large bowl and let sit for 15 minutes. Mix in oil, sugar, salt, and flour and let sit for 1 hour. Knead the dough and spread onto a pan. Spread pizza sauce and sprinkle cheese. Add any optional toppings as you wish. Bake at 400 deg Fahrenheit for 15 minutes. Enjoy!",
-      "imageURL": "http://upload.wikimedia.org/wikipedia/commons/c/c7/Spinach_pizza.jpg",
-      "likes": 4
     },
     {
       "id": 5,
@@ -40,25 +33,7 @@
       "ingredients": "2 acorn squash, 1 boiling water, 2 apples chopped into 1.4 inch pieces, 1/2 cup dried cranberries, 1 teaspoon cinnamon, 2 tablespoons melted butter",
       "steps": "Cut squash in half, remove seeds. Place squash in baking dish, cut-side down. Pour 1/4-inch water into dish. Bake for 30 minutes at 350 degrees F. In large bowl, combine remaining ingredients. Remove squash from oven, fill with mix. Bake for 30-40 more minutes, until squash tender. Enjoy!",
       "imageURL": "http://elanaspantry.com/wp-content/uploads/2008/10/acorn_squash_with_cranberry.jpg",
-      "originalURL": "",
-      "likes": 1
-    },
-    {
-      "id": 6,
-      "name": "Mic's Yorkshire Puds",
-      "ingredients": "200g plain flour, 3 eggs, 300ml milk, 3 tbsp vegetable oil",
-      "steps": "Put the flour and some seasoning into a large bowl. Stir in eggs, one at a time. Whisk in milk until you have a smooth batter. Chill in the fridge for at least 30 minutes. Heat oven to 220C/gas mark 7. Pour the oil into the holes of a 8-hole muffin tin. Heat tin in the oven for 5 minutes. Ladle the batter mix into the tin. Bake for 30 minutes until well browned and risen",
-      "imageURL": "http://upload.wikimedia.org/wikipedia/commons/f/f9/Yorkshire_Pudding.jpg",
-      "originalURL": "http://upload.wikimedia.org/wikipedia/commons/f/f9/Yorkshire_Pudding.jpg",
-      "likes": 3
-    },
-    {
-      "id": 7,
-      "name": "Old-Fashioned Oatmeal Cookies",
-      "ingredients": "1 cup raisins, 1 cup water, 3/4 cup shortening, 1 1/2 cups sugar, 2 1/2 cups flour, 1 tsp. soda, 1 tsp. salt, 1 tsp. cinnamon, 1/2 tsp. baking powder, 1/2 tsp. cloves, 2 cups oats, 1/2 cup chopped nuts",
-      "steps": "Simmer raisins and water over medium heat until raisins are plump, about 15 minutes. Drain raisins, reserving the liquid. Add enough water to reserved liquid to measure 1/2 cup. Heat oven to 400°. Mix thoroughly shortening, sugar, eggs and vanilla. Stir in reserved liquid. Blend in remaining ingredients. Drop dough by rounded teaspoonfuls about 2 inches apart onto ungreased baking sheet.Bake 8 to 10 minutes or until light brown, About 6 1/2 dozen cookies",
-      "imageURL": "http://s3.amazonaws.com/gmi-digital-library/65caecf7-a8f7-4a09-8513-2659cf92871e.jpg",
-      "originalURL": "#",
+      "originalURL": "https://elanaspantry.com/acorn-squash-with-cranberry-apple-stuffing/",
       "likes": 1
     },
     {
@@ -92,7 +67,7 @@
       "name": "Air Fryer Pork Chops  ",
       "ingredients": "4 boneless pork chops - about 1\"-thick,\n2 tbsp. extra-virgin olive oil, \n1/2 c. freshly grated Parmesan,\n1 tsp. kosher salt,\n1 tsp. paprika,\n1 tsp. garlic powder,\n1 tsp. onion powder,\n1/2 tsp. freshly ground black pepper",
       "steps": "Pat pork chops dry with paper towels, then coat both sides with oil. In a medium bowl, combine Parmesan and spices. Coat both sides of pork chops with Parmesan mixture. Place pork chops in basket of air fryer and cook at 375° until internal temperature reaches 145°, about 9 minutes, flipping halfway through",
-      "imageURL": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-190618-air-fryer-pork-chops-195-landscape-pf-1561578417.png?resize=980:*",
+      "imageURL": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-190618-air-fryer-pork-chops-195-landscape-pf-1561578417.png?crop=0.668xw:1.00xh;0.101xw,0&resize=980:*",
       "originalURL": "https://www.delish.com/cooking/recipe-ideas/a28091838/air-fryer-pork-chops-recipe/",
       "id": 11,
       "likes": 1
@@ -101,19 +76,19 @@
       "name": "AVOCADO PESTO PASTA",
       "ingredients": "8 oz Pasta of Choice,\nFlesh of 1 large Avocado,\n3 oz Fresh Basil - de-stemmed,\n½ bunch Parsley, de-stemmed,\n3–5 cloves of Garlic,\n¼ cup Nutritional Yeast,\nJuice + Zest of 1 Lemon,\n¼ tsp Red Chili Flakes (Optional),\n¼ cup Vegetable Broth, plus more to preference,\n½ tsp Salt, plus more to taste",
       "steps": "Bring a large pot of salted water to a boil and cook your Pasta according to the package instructions. In the meantime, combine all of the Pesto ingredients in a Food Processor and process until evenly incorporated. If you’d like your Pesto to be thinner, add additional Vegetable Broth in 2 tbsp increments as necessary. Drain the pasta, then return to the Pot and toss over low heat with the Pesto until warmed. Serve as desired. Store any leftover sauce in the fridge for up to one week, or it can be frozen for up to one month!",
-      "imageURL": "https://frommybowl.com/wp-content/uploads/2019/03/Avocado_Pesto_Pasta_Vegan_GlutenFree_OilFree_FromMyBowl-6-1170x1755.jpg",
+      "imageURL": "https://frommybowl.com/wp-content/uploads/2019/03/Avocado_Pesto_Pasta_Vegan_GlutenFree_OilFree_FromMyBowl-5-150x150.jpg",
       "originalURL": "https://frommybowl.com/avocado-pesto-pasta/",
       "id": 12,
-      "likes": 4
+      "likes": 5
     },
     {
       "name": "Air Fryer Salmon",
       "ingredients": "4 salmon fillets 6 ounces each,\n1 tablespoon olive oil,\n1 teaspoon garlic powder,\n½ teaspoon paprika,\nSalt and pepper to taste,\nLemon wedges for serving,\nTartar sauce for serving",
       "steps": "Preheat the air fryer to 400°F. Rub each fillet with olive oil and season with garlic powder, paprika, salt and pepper. Place the salmon in the air fryer and air fry for 7-9 minutes, depending on this thickness of the salmon. Please note, time may vary between air fryers. Open basket and check for desired doneness with a fork. You can return the salmon for another 1 or 2 minutes as necessary",
-      "imageURL": "https://feelgoodfoodie.net/wp-content/uploads/2020/01/Air-Fryer-Salmon-5.jpg",
+      "imageURL": "https://feelgoodfoodie.net/wp-content/uploads/2020/01/Air-Fryer-Salmon-3.jpg",
       "originalURL": "https://feelgoodfoodie.net/recipe/air-fryer-salmon/",
       "id": 13,
-      "likes": 4
+      "likes": 5
     },
     {
       "name": "Guacamole",
@@ -128,7 +103,7 @@
       "name": "Gluten Free Chocolate Chip Cookies",
       "ingredients": "1 stick butter/½ cup,\n1 tablespoon milk - or almond milk,\n¾ cup brown sugar,\n¼ cup white sugar,\n1 egg,\n2 teaspoons vanilla,\n1 ⅓ cups gluten-free all-purpose flour,\n¼ cup almond flour - 1 ounce,\n1 teaspoon baking soda,\n½ teaspoon salt,\n1 cup chocolate chips,\nSea salt for sprinkling -optional",
       "steps": "In a medium bowl, whisk together the gluten-free flour, almond flour, baking soda and salt until evenly combined - Set aside.\nMelt butter in a saucepan over medium heat. Once the butter is melted start to whisk constantly. First the butter will begin to foam, then after a couple of minutes it will begin to brown on the bottom of the saucepan. Turn off the heat as soon as the solids turn brown and the butter gives off a nutty aroma. Pour into a glass mixing bowl to prevent burning.\nAdd the milk, brown sugar and white sugar. Whisk to combine. Add the egg and vanilla and whisk until smooth and creamy.\nUsing a rubber spatula, mix in the dry ingredients until well combined. Stir in the chocolate chips.\nCover the bowl and let sit for 30 minutes. Preheat the oven to 350F. Scoop the cookie dough (about 2 Tablespoons of dough per cookie) and place a few inches apart on the baking sheets. Bake for 10-12 minutes, until golden and the center is set.\nLet cool 5 minutes then transfer to a wire rack to continue cooling. Enjoy!",
-      "imageURL": "https://meaningfuleats.com/wp-content/uploads/2018/06/IMG_1300-683x1024.jpg",
+      "imageURL": "https://meaningfuleats.com/wp-content/uploads/2018/06/IMG_1244-2-200x200.jpg",
       "originalURL": "https://meaningfuleats.com/the-best-gluten-free-chocolate-chip-cookies/#recipe-card",
       "id": 15,
       "likes": 2
@@ -137,7 +112,7 @@
       "name": "Roasted Broccoli",
       "ingredients": "12 ounces broccoli florets,\nExtra-virgin olive oil - for drizzling,\nSea salt and freshly ground black pepper,\nMeyer lemons -halved - optional,\nRed pepper flakes - optional",
       "steps": "Preheat the oven to 400°F and line a baking sheet with parchment paper. \nPlace the broccoli florets and lemon halves on the baking sheet. Toss with olive oil - salt - and pepper - and spread evenly on the baking sheet. \nRoast 15 to 22 minutes or until browned around the edges. Squeeze a little lemon juice onto the broccoli and sprinkle with red pepper flakes - if desired",
-      "imageURL": "https://cdn.loveandlemons.com/wp-content/uploads/2020/01/roasted-broccoli.jpg",
+      "imageURL": "https://cdn.loveandlemons.com/wp-content/uploads/2020/01/roasted-broccoli-1080x1080.jpg",
       "originalURL": "https://www.loveandlemons.com/roasted-broccoli/#wprm-recipe-container-42137",
       "id": 16,
       "likes": 1
@@ -146,7 +121,7 @@
       "name": "Baked Oats",
       "ingredients": "1 large ripe banana,\n1/4 cup of maple syrup,\n2/3 cup of milk (plant based as desired),\n3 tablespoons of nut butter,\n1 teaspoon of vanilla,\n1 cup of old fashioned oats,\n1/2 tablespoon of baking powder,\n1/2 teaspoon of baking soda,\npinch of salt,\noptional: 1/2 teaspoon of cinnamon OR 2 tablespoons of cocoa powder for the double choc version,\n1/2 cup of optional mix-ins such as berries - chocolate chips - etc",
       "steps": "Pre-heat the oven to 350 degrees F and grease a small casserole dish. Mine is a unique size of 6×8 but anything close to that will work including a 9×5 bread loaf pan or an 8×8-inch brownie pan (although you might want to slightly alter the baking time depending on your size). \nAdd all ingredients to a blender MINUS your mix-ins. Blend until creamy and little to no chunks of the oats remain. Mix in berries or anything else you desire.\nPour batter into the greased baking dish and top with any mix-ins as desired. Bake for 20-25 minutes (mine was perfect at 25 minutes) or until a toothpick inserted in the middle comes out clean",
-      "imageURL": "https://foodwithfeeling.com/wp-content/uploads/2021/02/baked-oats-2.jpg",
+      "imageURL": "https://foodwithfeeling.com/wp-content/uploads/2021/02/baked-oats-2-300x300.jpg",
       "originalURL": "https://foodwithfeeling.com/baked-oats-tiktok/",
       "id": 17,
       "likes": 3
@@ -173,7 +148,7 @@
       "name": "Banana Bread",
       "ingredients": "1 Stick (½ Cup) Butter,\n3 Large Ripe Bananas,\n2 Large Eggs,\n1 teaspoon Vanilla Extract,\n2 Cups All Purpose Flour,\n1 Cup Granulated Sugar,\n1 teaspoon Baking Soda,\n½ teaspoon salt,\n½ teaspoon cinnamon",
       "steps": "Preheat oven to 350 degrees. Spray a loaf pan with non-stick cooking spray or grease with butter and set aside.\nAdd the stick of butter to a large bowl and microwave for 1 minute - or until melted.\nAdd the bananas to the same bowl and mash with a fork. \nAdd the vanilla extract and egg to the bowl and use the same fork to mash and stir until no yellow streaks of egg remain.\nIn a second large bowl whisk together the flour - sugar - baking soda - salt - and cinnamon. \nAdd the dry ingredients to the wet ingredients and mix together with a spatula just until combined. \nPour the batter into prepared loaf pan and bake for 45-55 minutes until a toothpick inserted in the center of the bread comes out clean",
-      "imageURL": "https://thesaltymarshmallow.com/wp-content/uploads/2018/11/banana-bread.jpg",
+      "imageURL": "https://thesaltymarshmallow.com/wp-content/uploads/2018/11/banana-bread6-1-320x320.jpg",
       "originalURL": "https://thesaltymarshmallow.com/best-banana-bread-recipe/#recipe",
       "id": 20,
       "likes": 2
@@ -249,6 +224,15 @@
       "originalURL": "https://www.delish.com/cooking/recipe-ideas/a26146096/tuna-melt-recipe/",
       "likes": 1,
       "id": 28
+    },
+    {
+      "name": "Oatmeal Cookies",
+      "ingredients": "1 1/2 cups (212g) all-purpose flour (scoop and level to measure),\n1 tsp ground cinnamon,\n1/2 tsp baking soda,\n1/2 tsp baking powder,\n1/2 tsp salt,\n1 cup (226g) unsalted butter - softened slightly (it should still be somewhat cold and firm)\n1 cup (200g) packed light brown sugar,\n1/2 cup (100g) granulated sugar,\n2 large eggs,\n1 1/2 tsp vanilla extract,\n3 cups (260g) rolled old fashioned oats*,\n1 cup (153g) raisins** (preferably from a freshly opened package),\n1 cup (118g) chopped walnuts",
+      "steps": "Preheat oven to 350 degrees. Line rimmed 18 by 13-inch baking sheets with parchment paper or silicone baking mats.\nIn a mixing bowl whisk together flour, cinnamon, baking soda, baking powder and salt for 20 seconds, set aside.\nIn the bowl of an electric stand mixer fitted with the paddle attachment cream together butter, brown sugar, and granulated sugar until combined.\nMix in one egg, then blend in second egg and vanilla.\nAdd flour mixture and mix just until combined then mix in oats, raisins and walnuts.\nScoop dough out and shape into 1 1/2-inch balls (or 40 grams each), transfer to prepared baking sheet fitting 12 per sheet and spacing 2-inches apart.\nBake in preheated oven until golden brown on edges and nearly set (center should look under-baked), about 12 - 14 minutes.\nLet cool on baking sheet for a few minutes then transfer to a wire rack to cool completely. Repeat with remaining dough.\n\nStore in an airtight container at room temperature",
+      "imageURL": "https://www.cookingclassy.com/wp-content/uploads/2018/08/oatmeal-cookies-1-180x180.jpg",
+      "originalURL": "https://www.cookingclassy.com/oatmeal-cookies/",
+      "likes": 0,
+      "id": 29
     }
   ]
 }
