@@ -58,15 +58,6 @@ function App() {
 
   }
 
-
-  // const sortedRecipes = recipes.sort((recipe1, recipe2) => {
-  //   if(sortBy === 'name'){
-  //     return recipe1.name - recipe2.name
-  //   } else {
-  //     return recipe1.id.localCompare(recipe2.id)
-  //   }
-  // })
-
     return (
     
     <div className = "App">
