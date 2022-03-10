@@ -4,52 +4,56 @@ import RecipeDetail from './RecipeDetail'
 
 function RecipeCard({ recipe, onRecipeClick, onRemoveRecipe }) {
   const [showDetail, setShowDetail] = useState(false)
-  const [likes, setLikes] = useState(0)
+  const [likes, setLikes] = useState(recipe.likes)
 
   function handleDetail(e, showDetail){
     e.stopPropagation()
     setShowDetail(!showDetail)
   }
 
-  function handleLike(e) {
-    e.stopPropagation()
-    setLikes((likes) => likes + 1)
-  }
-
-  // function handleAddLike(e) {
+  // function handleLike(e) {
   //   e.stopPropagation()
-  //   fetch('http://localhost:3000/recipes', {
-  //     method: "POST", 
-  //     headers: {
-  //       "Content-Type": "application/json",
-  //     }, 
-  //     body: JSON.stringify(likes)
-  //   })
-  //     .then(response => response.json())
-  //     .then(handleLike(likes))
+  //   setLikes((likes) => likes + 1)
   // }
+
+  
+
+  function handleAddLike(e) {
+    e.stopPropagation()
+    fetch(`http://localhost:3000/recipes/${recipe.id}`, {
+      method: "PATCH", 
+      headers: {
+        "Content-Type": "application/json",
+      }, 
+      body: JSON.stringify({likes: likes + 1})
+    })
+      .then(() => setLikes((likes) => likes + 1))
+  }
 
   function handleDelete(e){
     e.stopPropagation()
     onRemoveRecipe(recipe)
   }
 
+  // const updatedRecs = recipies.map(rec => rec.id == id ? {...rec, likes: likes + 1} : rec)
+  // setRecipes(updatedRecs)
   return (
     <div 
-    className="ui card recipeTile"
+    className="ui card background"
     onClick={(e) => onRecipeClick(e, recipe)}
     >
-      <h5>{recipe.name}</h5>
+      <div className= "background">
+        <h5>{recipe.name}</h5>
+      </div>
       <img src={recipe.imageURL} alt={recipe.name}/>
       {showDetail && <RecipeDetail recipe={recipe} />} 
-      <button onClick={handleLike}> {likes ? `★ ${likes}` : ` ☆ ${likes}`} </button>
+      <button onClick={handleAddLike}> {likes ? `★ ${likes}` : ` ☆ ${likes}`} </button>
       <button onClick={e => handleDelete(e)}><FiTrash2 /></button>
       <button
         className="ui button"
         onClick={(e) => handleDetail(e, showDetail)}>
           {showDetail ? "Hide Details" : "Show Details"}
       </button>
-      
     </div>
   )
   }

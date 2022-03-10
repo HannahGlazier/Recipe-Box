@@ -24,14 +24,23 @@ code {
 
 .addRecipeBorder {
   margin: 30px;
+  padding: 20px;
   /* padding: center; */
   /* padding-left: 400px; */
   /* text-align: center; */
-  
+  /* display: flex;
+  /* align-items: center; */
+  /* justify-content: right; */
   border-style: solid;
   background-color: #E6E6E8;
 }
 
+.test {
+  /* text-align: center;  */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .app {
   margin: 0% 5% 0% 5%;
@@ -42,6 +51,12 @@ h1 {
   font-size: 20px;
   font-weight: 900;
   text-align: center;
+}
+
+h2 {
+  font-size: 15px;
+  font-weight: 900;
+  text-align: left;
 }
 
 h4 {
@@ -80,3 +95,21 @@ h5 {
   font-size: 30px;
 }
 
+a {
+  color: black;
+  text-decoration: underline;
+}
+
+.center {
+ text-align: center;
+}
+
+.background {
+  background: white;
+}
+
+ .ui.card,
+.ui.cards>.card {
+  background-color: #e0e1e2;
+  
+}

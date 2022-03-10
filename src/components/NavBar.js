@@ -26,16 +26,6 @@ function NavBar() {
         <FiHome /> Home
       </NavLink>
       <NavLink
-        to="/about"
-        exact
-        className="item"
-        activeStyle={{
-          background: "#E6E6E8",
-        }}
-      >
-        <FiInfo /> About
-      </NavLink>
-      <NavLink
         to="/AddRecipe"
         exact
         className="item"
@@ -45,6 +35,16 @@ function NavBar() {
       >
         <FiPlusSquare />
         Add Recipe
+      </NavLink>
+      <NavLink
+        to="/about"
+        exact
+        className="item"
+        activeStyle={{
+          background: "#E6E6E8",
+        }}
+      >
+        <FiInfo /> About
       </NavLink>
     </div>
   );
