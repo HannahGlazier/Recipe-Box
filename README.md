@@ -4,13 +4,15 @@ This is an application that shows a list of recipes. It is a single page applica
 
 
 
-![screenshot of my recipe list](../public/images/ListPic.png)
+![screenshot of my recipe list](./public/images/ListPic.png)
 
-![screenshot of reicpe library list](../public/images/LibraryPic.png)
+![screenshot of reicpe library list](./public/images/LibraryPic.png)
 
-![screenshot of add recipe form](../public/images/FormPic.png)
+![screenshot of add recipe form](./public/images/FormPic.png)
 
-![screenshot of about section](../public/images/AboutPic.png)
+![screenshot of about section](./public/images/ListPic.png)
+
+
 
 ## User Stories
 
