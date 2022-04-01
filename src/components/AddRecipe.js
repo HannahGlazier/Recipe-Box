@@ -145,6 +145,7 @@ function AddRecipe({ addNewRecipe }) {
           </form>
         </div>
       </div>
+      <image href='public/alex-perri-bmM_IdLd1SA-unsplash.jpg'></image>
     </div>
   );
 }

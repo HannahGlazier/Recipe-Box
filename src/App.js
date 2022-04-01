@@ -64,7 +64,9 @@ function App() {
       <Header />
         <NavBar />
         <Switch>
-          <Route exact path='/' >
+          <Route exact path="/">
+          </Route>
+          <Route exact path='/products' >
             <RecipeContainer
               recipes={searchedSortedRecipe}
               recipesToTry={recipesToTry}
